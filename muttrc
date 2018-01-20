@@ -1,0 +1,70 @@
+## gmail ##
+unset folder
+unset record
+set folder="imaps://<gmail user>@imap.gmail.com"
+set spoolfile="imaps://<gmail user>@imap.gmail.com/INBOX"
+set imap_user=<gmail user>@gmail.com
+set imap_pass=<gmail pass>
+set imap_list_subscribed=yes
+unset imap_passive
+unset imap_servernoise
+
+set from=<gmail user>@gmail.com
+mailboxes +INBOX
+set postponed="+[Gmail]/Concepten"
+set trash="+[Gmail]/Prullenbak"
+set signature="echo '<name for signature>\n'|"
+set sig_on_top=yes
+
+set realname='<real name>'
+set certificate_file=<absolute path to cert file>
+set alias_file=<absolute path to alias file>
+set history_file=<absolute path to history file>
+
+set header_cache=<absolute path to header cache>
+set message_cachedir=<absolute path to cache>
+
+set move=no
+set query_command = "mutt_vc_query '%s'"
+set editor="/usr/bin/vim.basic +'set background=dark' +'set textwidth=72'"
+
+set sendmail="/usr/bin/msmtp"
+set use_envelope_from=yes
+
+source <absolute path to alias file>
+
+## work ##
+
+unset folder
+set folder="imaps://<work email>@<work imap server>"
+set spoolfile="imaps://<work email>@<work imap server>/INBOX"
+set imap_user=<work email>
+set imap_pass=<work password>
+set imap_list_subscribed=yes
+unset imap_passive
+unset imap_servernoise
+
+mailboxes +INBOX
+set from=<work email>
+set postponed="+INBOX.Concepten"
+set record="+INBOX.Sent"
+set trash="+INBOX.Trash"
+set signature='/dev/null'
+
+set realname='<work realname>'
+set signature="echo '<work signature name>\n'|"
+set certificate_file=<absolute path to cert file>
+set alias_file=<absolute path to alias file>
+set history_file=<absolute path to history file>
+
+set header_cache=<absolute path to header cache>
+set message_cachedir=<absolute path to cache>
+
+set move=no
+set query_command = "mutt_vc_query '%s'"
+set editor="/usr/bin/vim.basic +'set background=dark' +'set textwidth=72'"
+
+set sendmail="/usr/bin/msmtp"
+set use_envelope_from=yes
+
+source <absolute path to alias file>

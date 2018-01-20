@@ -1,0 +1,11 @@
+set-option -g prefix C-a
+unbind-key C-b
+bind-key C-a send-prefix
+
+set-option -g mode-keys vi
+set-option -g status-keys vi
+
+bind-key h selectp -L
+bind-key j selectp -D
+bind-key k selectp -U
+bind-key l selectp -R
