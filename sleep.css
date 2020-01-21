@@ -1,0 +1,24 @@
+body {
+  color: rgb(20, 20, 20);
+  background-color: rgb(200, 200, 200);
+}
+
+.jongen {
+  height: 150px;
+  width: 150px;
+  float: left;
+  border: 2px solid grey;
+  background-color: rgb(222, 222, 222);
+  margin-right: 5px;
+}
+
+.jongen header {
+  color: #111;
+  text-shadow: #000 0 1px;
+  box-shadow: 5px;
+  padding: 1em;
+}
+
+.jongen.over {
+  border: 2px dashed #000;
+}
