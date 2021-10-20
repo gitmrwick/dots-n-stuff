@@ -1,0 +1,28 @@
+# note: values in [] are to be replaced with real values without the []
+unset folder
+unset record
+set folder="imaps://[first].[last]@[domain].[tld]@outlook.office365.com"
+set spoolfile=+INBOX
+set imap_user=[first].[last]
+set imap_pass=`pass [first].[last]@[domain].[tld]`
+set imap_list_subscribed=no
+set imap_check_subscribed=yes
+unset imap_passive
+unset imap_servernoise
+
+set sidebar_visible=yes
+
+mailboxes +INBOX +INBOX/00[mbox1] +INBOX/10[mbox2] +INBOX/10[mbox2]/11[mbox2.1] +INBOX/20[mbox3] +INBOX/30[mbox4]
+mailboxes +INBOX/[mbox10] +INBOX/[mbox10]/00[mbox10.1] +INBOX/[mbox10]/00[mbox10.2] +INBOX/[mbox10]/01[mbox10.3]
+
+set from=[first].[last]@[domain].[tld]
+set signature="echo '[first]\n' |"
+set sig_on_top=yes
+
+set realname="[first]"
+
+set sendmail="/usr/bin/msmtp"
+set use_envelope_from=yes
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html

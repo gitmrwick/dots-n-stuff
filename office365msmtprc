@@ -1,0 +1,14 @@
+# note: values in [] are to be replaced with real values without the []
+defaults
+logfile [path to file owned by msmtprc and writable]
+tls on
+tls_starttls on
+tls_trust_file [path to system crt - possibly in /etc/ssl/certs]
+
+account [account name]
+from [first].[last]@[domain].[tld]
+host smtp.office365.com
+port 587
+auth on
+user [first].[last]@[domain].[tld]
+passwordeval pass [first].[last]@[domain].[tld]
